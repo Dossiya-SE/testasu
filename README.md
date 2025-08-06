@@ -4,4 +4,7 @@
 a = 2
 b = 9
 print('a*b')
-ss
+
+c = Dossiya
+d = Dakou
+print('c and d)
