@@ -16,19 +16,33 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
-        <Hero />
-        <ValueProposition />
-        <About />
-        <Team />
-        <Problem />
-        <Solution />
-        <HowItWorks />
-        <ImpactMetrics />
-        <PilotSection />
-        <FAQ />
-        <ContactForm />
-        <Footer />
+      <main className="min-h-screen relative">
+        <div className="fixed inset-0 pointer-events-none z-0">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-particle-float"></div>
+          <div
+            className="absolute top-3/4 right-1/4 w-1 h-1 bg-accent/40 rounded-full animate-particle-float"
+            style={{ animationDelay: "2s" }}
+          ></div>
+          <div
+            className="absolute top-1/2 left-3/4 w-3 h-3 bg-primary/20 rounded-full animate-particle-float"
+            style={{ animationDelay: "4s" }}
+          ></div>
+        </div>
+
+        <div className="relative z-10">
+          <Hero />
+          <ValueProposition />
+          <About />
+          <Team />
+          <Problem />
+          <Solution />
+          <HowItWorks />
+          <ImpactMetrics />
+          <PilotSection />
+          <FAQ />
+          <ContactForm />
+          <Footer />
+        </div>
       </main>
     </>
   )
